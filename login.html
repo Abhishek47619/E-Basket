@@ -154,14 +154,16 @@ formData2.addEventListener("submit",function(e){
     let email = document.getElementById("email")
     let password = document.getElementById("password")
 
+    if(email.value === "Admin@mail.com" && password.value === "Admin"){
+            location.href = "admin.html";
+            return;
+    }
     let obj2 = {
         email:formData2.email.value,
         password:formData2.password.value,
     } 
     store.forEach(element=>{
-        if(email.value === "Admin@mail.com" && password.value === "Admin"){
-            location.href = "admin.html"
-        }else if(element.email==obj2.email && element.password==obj2.password){
+        if(element.email==obj2.email && element.password==obj2.password){
             swal("Login Succssesfully!", " ", "success");
             setTimeout(()=>{
             window.location.href="index.html"

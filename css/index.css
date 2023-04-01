@@ -132,7 +132,7 @@ a{text-decoration: none;
 #slidbox2{
     height:335px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
  /* Shiv for your work, for 2st sliding picture. */
@@ -218,7 +218,7 @@ width: 100%;
  /* Shiv for your work, for 2st sliding picture. */
  #slidbox2 {
     display: grid;
-     grid-template-columns: repeat(4,1fr);
+     grid-template-columns: repeat(5,1fr);
      gap: 10px;
      /* width: 100%; */
 
